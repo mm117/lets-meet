@@ -104,3 +104,8 @@ video {
 .unmute, .stop{
     color: #CC3B33;
 }
+
+.start-meeting{
+    margin-top: 20%;
+    margin-left: 45%;
+}

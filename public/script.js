@@ -5,7 +5,7 @@ myVideo.muted = true;
 let peer = new Peer(undefined, {
   path: "/peerjs",
   host: "/",
-  port: "443",
+  port: "3030",
 });
 
 let myvideoStream;
@@ -66,6 +66,10 @@ socket.on("createMessage", (message) => {
   scrollToBottom();
 });
 
+socket.on("userLeft", (userId) => {
+    console.log(userId);
+  });
+
 const scrollToBottom = () => {
   let d = $(".main__chat_window");
   d.scrollTop(d.prop("scrollHeight"));
@@ -124,4 +128,10 @@ const setStopVideo = () => {
       <span>Play Video</span>
     `
     document.querySelector('.main__video_button').innerHTML = html;
+  }
+
+
+  const leaveMeeting = () => {
+    window.location.href = "/";
+    socket.disconnect();
   }
