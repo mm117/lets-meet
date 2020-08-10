@@ -27,12 +27,18 @@ video {
     display: flex;
     flex-direction: column;
 }
+.main__left_flex{
+    flex:0.8;
+}
 
 .main__right{
     display: flex;
     flex-direction: column;
     background-color: #242324;
     border-left: 1px solid #3D3D42;
+}
+.main__right_flex{
+    flex:0.2;
 }
 
 .main__videos {
@@ -65,7 +71,7 @@ video {
     cursor: pointer;
 }
 .main__controls_button i {
-    font-size: 18px;
+    font-size: 22px;
 }
 .main__controls_button:hover{
     background-color: #343434;
@@ -73,7 +79,8 @@ video {
 }
 
 .leave_meeting{
-    color:#EB534B
+    background-color:red;
+    color:#f5f5f5
 }
 .main__header{
     color:#f5f5f5;

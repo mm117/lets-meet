@@ -138,5 +138,6 @@ const setStopVideo = () => {
   }
 
   const toggleChat = () => {
-    $('.main__right').toggleClass( "hidechat" )
+    $('.main__right').toggleClass( "hidechat" ).toggleClass('main__right_flex');
+    $('.main__left').toggleClass('main__left_flex');
    }
