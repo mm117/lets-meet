@@ -8,6 +8,7 @@ body{
 #video-grid {
     display: flex;
     justify-content: center;
+    max-width:750px;
 }
 
 video {
