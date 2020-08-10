@@ -133,7 +133,7 @@ const setStopVideo = () => {
 
 
   const leaveMeeting = () => {
-    document.removeChild(myVideo);
+    myVideo.remove();
     window.location.href = "/";
     socket.disconnect();
   }
