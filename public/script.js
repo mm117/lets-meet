@@ -1,6 +1,7 @@
 const socket = io("/");
 const videoGrid = document.getElementById("video-grid");
 const myVideo = document.createElement("video");
+const hideChat = true;
 myVideo.muted = true;
 let peer = new Peer(undefined, {
   path: "/peerjs",
@@ -135,3 +136,7 @@ const setStopVideo = () => {
     window.location.href = "/";
     socket.disconnect();
   }
+
+  const toggleChat = () => {
+    $('.main__right').toggleClass( "hidechat" )
+   }

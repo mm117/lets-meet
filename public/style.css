@@ -8,7 +8,7 @@ body{
 #video-grid {
     display: flex;
     justify-content: center;
-    max-width:750px;
+   
 }
 
 video {
@@ -23,13 +23,12 @@ video {
 }
 
 .main__left{
-    flex: 0.8;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 .main__right{
-    flex: 0.2;
     display: flex;
     flex-direction: column;
     background-color: #242324;
@@ -109,4 +108,8 @@ video {
 .start-meeting{
     margin-top: 20%;
     margin-left: 45%;
+}
+
+.hidechat{
+    display: none;
 }
